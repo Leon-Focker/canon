@@ -1,10 +1,26 @@
-;; * VIOLA.lsp
+;; * canon.lsp
+
+;;; To generate my canon yourself, you only have to change the global parameter
+;;; *target-dir* to a directory on your system. Then load the script and watch
+;;; it get to work. To get a different canon, experiment with the #'compose
+;;; function. Definitely start with shorter canons though, as the brute force
+;;; method I am using can really take a while.
+
+;;; the nomenclature in the following object definitions and functions is not
+;;; good. For example, I use root as the midi-value for the root note and root-f
+;;; as the same note as a frequency value. A worse offender might be 'interval,
+;;; as it does not refer to a musical interval but another note (where the
+;;; harmonic is played). Also, some things are referred to by the german word,
+;;; because it was easier to avoid duplicates (string?) and at some points I
+;;; just couldn't be bothered to translate some of the words...
 
 (in-package :sc)
 
+(defparameter *target-dir* "/E/code/canon/")
+
 (in-scale :quarter-tone)
 
-;; ** classes and parsing
+;; ** classes
 
 (defclass note ()
   ((id :accessor id :initarg :id :initform nil)
@@ -26,12 +42,16 @@
    (this :accessor this :initarg :this :initform nil)
    (options :accessor options :initarg :options :initform '() :type list)))
 
+;; ** printing
+
 ;; *** printing 
 (defmethod print-object :after ((nt note) stream)
   (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
 
 (defmethod print-object ((vh viola-harmonic) stream)
   (format stream "<VIOLA-HARMONIC ~a>" (id vh)))
+
+;; ** finding matches
 
 ;; *** matchp
 (defmethod matchp ((vh1 viola-harmonic) (vh2 viola-harmonic)
@@ -59,6 +79,8 @@
 	  (samenotep p s)
 	  (samenotep p i)))))
 
+;; ** parsing to sc-event
+
 ;; *** parse-to-event
 
 (defmethod parse-to-event ((vh viola-harmonic) &optional (start-time 1))
@@ -68,6 +90,8 @@
 		 ,(sounding vh)))
    'q
    :start-time start-time))
+
+;; ** utilities and make-functions for classes
 
 ;; *** MAKE
 (defun get-interval-from-harmonic (root sounding)
@@ -103,8 +127,9 @@
 (defun find-with-id (id ls)
   (find (string id) ls :test #'(lambda (x y) (equal x (id y)))))
 
-;; *** viola
+;; ** all viola harmonics and notes
 
+;; *** get-all-artificial-harmonics
 ;;; all possible artificial viola harmonics:
 (defun get-all-artificial-harmonics ()
   (loop for froms in '((f3 c4 g4 d5)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4))
@@ -122,18 +147,21 @@
 							(midi-to-note note)
 							(midi-to-note (+ interval note))
 							saite)))))
+
 ;; what about the different positions to play one harmonic?
 (defun get-all-natural-harmonics ()
   (loop for root in '(c3 g3 d4 a4)
 	for saite in '(4 3 2 1)
 	append (loop for interval in '(12 19 24 28 31 34 36)
-		     for played-interval in '((12)(7 19)(5 24)(4 9 16 28)(3 31)(3 6 10 15 22 34)(2 8 17 36))
+		     for played-interval in '((12)(7 19)(5 24)(4 9 16 28)(3 31)
+					      (3 6 10 15 22 34)(2 8 17 36))
 		     append (loop for played in played-interval
-				  collect (make-viola-harmonic (format nil "~a_~a_~a"
-								       saite
-								       interval
-								       (midi-to-note (+ (note-to-midi root)
-								   interval)))
+				  collect (make-viola-harmonic
+					   (format nil "~a_~a_~a"
+						   saite
+						   interval
+						   (midi-to-note (+ (note-to-midi root)
+								    interval)))
 						  root
 						  (midi-to-note (+ (note-to-midi root)
 								   interval))
@@ -155,7 +183,10 @@
 					(get-all-natural-harmonics)
 					(get-all-normal-notes)))
 
+;; ** more match-making
+
 ;; *** find-similar
+;;; find an object that matches all three input pitches in some way
 (defun find-similar (root sounding interval
 		     &optional (scale 'chromatic-scale))
   (flet ((samenotep (a b)
@@ -168,7 +199,10 @@
 			       (note-to-freq (interval vn))))
 	    collect vn)))
 
+;; ** notation
+
 ;; *** notate
+;;; write a list of objects into an xml file for musical notation
 (defun notate (lst-of-harmonics file &optional (instrument 'viola))
   (unless (listp lst-of-harmonics) (error "not a list: ~a" lst-of-harmonics))
   (unless (listp (car lst-of-harmonics))
@@ -195,7 +229,9 @@
 
 ;; ** compose
   
-;; Einsatzabstand should be #'1- for voice 2 and 3 ...
+;;; Einsatzabstand should be #'1- for voice 2 and 3, as it is now, the third
+;;; voice starts earlier in relation to the second, as the second in relation to
+;;; the first...
 (defun compose (first-pitch length &optional (einsatzabstand 1) (n 0))
   (let* ((all-notes (append (get-all-artificial-harmonics)
 			    (get-all-natural-harmonics)
@@ -278,19 +314,21 @@
        (compose-aux `(,(make-cf (first first-note)
 				first-pitch)))))))
 
+;; *** decode-canon
+;;; get the "cantus firmus" (could've just called it first voice) of the
+;;; generated canon.
 (defun decode-canon (ls-of-cf)
   (let* ((cantus-firmus (loop for i in ls-of-cf collect (this i))))
     cantus-firmus))
 
 ;; *** the canon
 
-#|
 (defparameter *canon* (compose 'a3 40 2))
 
-(notate (loop for i in *canon* collect (note i)) "/E/code/canon/test.xml")
+(notate (loop for i in *canon* collect (note i))
+	(format nil "~acanon_chords.xml" *target-dir*))
 
 (decode-canon *canon*)
-|#
 
-;; EOF VIOLA.lsp
+;; EOF canon.lsp
 
