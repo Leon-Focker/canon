@@ -702,9 +702,9 @@
         <Text>
           <linkedMain/>
           <style>Title</style>
-          <text><font size="20"></font>
+          <text><font size="20"/>
      Kanon für Bratsche
-    </text>
+</text>
           </Text>
         <Text>
           <linkedMain/>
@@ -1979,12 +1979,10 @@
       <Measure>
         <voice>
           <TimeSig>
-            <linkedMain/>
             <sigN>1</sigN>
             <sigD>4</sigD>
             </TimeSig>
           <StaffText>
-            <linkedMain/>
             <visible>0</visible>
             <style>Expression</style>
             <placement>below</placement>
@@ -1993,13 +1991,10 @@
           <Dynamic>
             <subtype>ppp</subtype>
             <velocity>16</velocity>
-            <linkedMain/>
             </Dynamic>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>57</pitch>
               <tpc>17</tpc>
               </Note>
@@ -2009,10 +2004,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>64</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2022,10 +2015,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>64</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2035,10 +2026,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>64</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2048,15 +2037,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               </Note>
@@ -2066,15 +2052,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               </Note>
@@ -2084,16 +2067,13 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <StemDirection>down</StemDirection>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2103,16 +2083,13 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <StemDirection>down</StemDirection>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2122,10 +2099,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2141,10 +2116,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2156,7 +2129,6 @@
               <tpc>18</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>57</pitch>
               <tpc>17</tpc>
               <head>diamond</head>
@@ -2167,7 +2139,6 @@
           <Clef>
             <concertClefType>G</concertClefType>
             <transposingClefType>G</transposingClefType>
-            <linkedMain/>
             </Clef>
           </voice>
         <voice/>
@@ -2177,7 +2148,6 @@
             <fractions>1/8</fractions>
             </location>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2187,14 +2157,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>76</pitch>
               <tpc>18</tpc>
@@ -2223,10 +2190,8 @@
           </voice>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
                 </Accidental>
@@ -2239,17 +2204,14 @@
       <Measure>
         <voice>
           <StaffText>
-            <linkedMain/>
             <minDistance>-999</minDistance>
             <size>8</size>
             <offset x="2.24529" y="3.44788"/>
             <text>II</text>
             </StaffText>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               <head>diamond</head>
@@ -2259,10 +2221,8 @@
           </voice>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -2272,10 +2232,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2291,10 +2249,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2306,7 +2262,6 @@
               <tpc>19</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>64</pitch>
               <tpc>18</tpc>
               <head>diamond</head>
@@ -2319,12 +2274,10 @@
         <voice/>
         <voice>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2334,14 +2287,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>83</pitch>
               <tpc>19</tpc>
@@ -2353,17 +2303,14 @@
       <Measure>
         <voice>
           <StaffText>
-            <linkedMain/>
             <minDistance>-999</minDistance>
             <size>8</size>
             <offset x="2.24529" y="3.44788"/>
             <text>II</text>
             </StaffText>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               <head>diamond</head>
@@ -2373,10 +2320,8 @@
           </voice>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
                 </Accidental>
@@ -2389,10 +2334,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2408,10 +2351,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2423,7 +2364,6 @@
               <tpc>18</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               <head>diamond</head>
@@ -2439,7 +2379,6 @@
             <fractions>1/8</fractions>
             </location>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2449,14 +2388,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>83</pitch>
               <tpc>19</tpc>
@@ -2478,10 +2414,8 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2498,10 +2432,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2513,7 +2445,6 @@
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
                 </Accidental>
@@ -2535,10 +2466,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2569,12 +2498,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2584,17 +2511,14 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Accidental>
                 <subtype>accidentalSharp</subtype>
                 </Accidental>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>90</pitch>
               <tpc>20</tpc>
@@ -2602,7 +2526,6 @@
               </Note>
             </Chord>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
@@ -2612,10 +2535,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2631,10 +2552,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2646,7 +2565,6 @@
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>60</pitch>
               <tpc>14</tpc>
               <head>diamond</head>
@@ -2662,7 +2580,6 @@
             <fractions>1/8</fractions>
             </location>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2672,14 +2589,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>88</pitch>
               <tpc>18</tpc>
@@ -2691,15 +2605,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>55</pitch>
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               </Note>
@@ -2719,19 +2630,15 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>65</pitch>
               <tpc>13</tpc>
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2749,15 +2656,12 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>65</pitch>
               <tpc>13</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2790,12 +2694,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>quarter</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2805,14 +2707,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>93</pitch>
               <tpc>17</tpc>
@@ -2835,19 +2734,15 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>57</pitch>
               <tpc>17</tpc>
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2865,15 +2760,12 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>57</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2906,12 +2798,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>quarter</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -2921,14 +2811,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>76</pitch>
               <tpc>18</tpc>
@@ -2951,10 +2838,8 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -2970,10 +2855,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -2985,7 +2868,6 @@
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3004,10 +2886,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3024,7 +2904,6 @@
           <Clef>
             <concertClefType>G</concertClefType>
             <transposingClefType>G</transposingClefType>
-            <linkedMain/>
             </Clef>
           </voice>
         <voice/>
@@ -3043,12 +2922,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3058,14 +2935,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>74</pitch>
               <tpc>16</tpc>
@@ -3073,7 +2947,6 @@
               </Note>
             </Chord>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
@@ -3098,15 +2971,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>64</pitch>
               <tpc>18</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>67</pitch>
               <tpc>15</tpc>
               </Note>
@@ -3116,15 +2986,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>77</pitch>
               <tpc>13</tpc>
               </Note>
@@ -3134,15 +3001,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -3152,15 +3016,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>67</pitch>
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>71</pitch>
               <tpc>19</tpc>
               </Note>
@@ -3180,10 +3041,8 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3200,10 +3059,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3215,7 +3072,6 @@
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3234,10 +3090,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3268,12 +3122,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3283,14 +3135,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>81</pitch>
               <tpc>17</tpc>
@@ -3298,7 +3147,6 @@
               </Note>
             </Chord>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
@@ -3308,15 +3156,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>72</pitch>
               <tpc>14</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -3326,10 +3171,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>74</pitch>
               <tpc>16</tpc>
               </Note>
@@ -3349,19 +3192,15 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3379,15 +3218,12 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>62</pitch>
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3420,12 +3256,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>quarter</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3435,14 +3269,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>81</pitch>
               <tpc>17</tpc>
@@ -3455,10 +3286,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3474,10 +3303,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3489,7 +3316,6 @@
               <tpc>14</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>67</pitch>
               <tpc>15</tpc>
               <head>diamond</head>
@@ -3505,7 +3331,6 @@
             <fractions>1/8</fractions>
             </location>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3515,14 +3340,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>79</pitch>
               <tpc>15</tpc>
@@ -3534,17 +3356,14 @@
       <Measure>
         <voice>
           <StaffText>
-            <linkedMain/>
             <minDistance>-999</minDistance>
             <size>8</size>
             <offset x="2.24529" y="3.44788"/>
             <text>II</text>
             </StaffText>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>74</pitch>
               <tpc>16</tpc>
               <head>diamond</head>
@@ -3554,10 +3373,8 @@
           </voice>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>81</pitch>
               <tpc>17</tpc>
               </Note>
@@ -3567,15 +3384,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>69</pitch>
               <tpc>17</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>84</pitch>
               <tpc>14</tpc>
               </Note>
@@ -3585,10 +3399,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3605,10 +3417,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3620,7 +3430,6 @@
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>74</pitch>
               <tpc>16</tpc>
               <head>diamond</head>
@@ -3636,7 +3445,6 @@
             <fractions>1/8</fractions>
             </location>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3646,14 +3454,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -3665,15 +3470,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>74</pitch>
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>81</pitch>
               <tpc>17</tpc>
               </Note>
@@ -3683,15 +3485,12 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>72</pitch>
               <tpc>14</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <pitch>76</pitch>
               <tpc>18</tpc>
               </Note>
@@ -3711,10 +3510,8 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3731,10 +3528,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3746,7 +3541,6 @@
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3765,10 +3559,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3799,12 +3591,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -3814,14 +3604,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -3829,7 +3616,6 @@
               </Note>
             </Chord>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>eighth</durationType>
             </Rest>
@@ -3839,7 +3625,6 @@
       <Measure>
         <voice>
           <StaffText>
-            <linkedMain/>
             <minDistance>-999</minDistance>
             <size>8</size>
             <offset x="2.24529" y="1.58193"/>
@@ -3856,10 +3641,8 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3876,10 +3659,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3891,7 +3672,6 @@
               <tpc>16</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3910,10 +3690,8 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -3932,10 +3710,8 @@
       <Measure>
         <voice>
           <Chord>
-            <linkedMain/>
             <durationType>quarter</durationType>
             <Note>
-              <linkedMain/>
               <pitch>79</pitch>
               <tpc>15</tpc>
               </Note>
@@ -3955,19 +3731,15 @@
               </Number>
             </Tuplet>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>67</pitch>
               <tpc>15</tpc>
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <Tie>
                   <linkedMain/>
@@ -3984,15 +3756,12 @@
               </Note>
             </Chord>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Note>
-              <linkedMain/>
               <pitch>67</pitch>
               <tpc>15</tpc>
               </Note>
             <Note>
-              <linkedMain/>
               <Spanner type="Tie">
                 <prev>
                   <location>
@@ -4025,12 +3794,10 @@
               </Number>
             </Tuplet>
           <Rest>
-            <linkedMain/>
             <visible>0</visible>
             <durationType>quarter</durationType>
             </Rest>
           <Chord>
-            <linkedMain/>
             <durationType>eighth</durationType>
             <Stem>
               <visible>0</visible>
@@ -4040,14 +3807,11 @@
               <visible>0</visible>
               </Hook>
             <Note>
-              <linkedMain/>
               <Symbol>
                 <name>noteheadParenthesisLeft</name>
-                <linkedMain/>
                 </Symbol>
               <Symbol>
                 <name>noteheadParenthesisRight</name>
-                <linkedMain/>
                 </Symbol>
               <pitch>86</pitch>
               <tpc>16</tpc>
@@ -10140,9 +9904,9 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text><font size="20"></font>
+            <text><font size="20"/>
      Kanon für Bratsche
-    </text>
+</text>
             </Text>
           <Text>
             <linked>
@@ -13018,9 +12782,9 @@
               </linked>
             <style>Title</style>
             <align>left,top</align>
-            <text><font size="20"></font>
+            <text><font size="20"/>
      Kanon für Bratsche
-    </text>
+</text>
             </Text>
           <Text>
             <linked>
@@ -14443,8 +14207,6 @@
           </Staff>
         <trackName>Akkorde</trackName>
         <Instrument id="viola">
-          <longName>Bratsche</longName>
-          <shortName>Bra.</shortName>
           <trackName>Bratsche</trackName>
           <minPitchP>48</minPitchP>
           <maxPitchP>93</maxPitchP>
@@ -14520,9 +14282,6 @@
           </Staff>
         <trackName>Bratsche</trackName>
         <Instrument id="viola">
-          <longName>Cantus Firmus
-</longName>
-          <shortName>C. F.</shortName>
           <trackName>Bratsche</trackName>
           <minPitchP>48</minPitchP>
           <maxPitchP>93</maxPitchP>
@@ -14598,8 +14357,6 @@
           </Staff>
         <trackName>Bratsche</trackName>
         <Instrument id="viola">
-          <longName>Zweite Stimme</longName>
-          <shortName>2. St.</shortName>
           <trackName>Bratsche</trackName>
           <minPitchP>48</minPitchP>
           <maxPitchP>93</maxPitchP>
@@ -14675,8 +14432,6 @@
           </Staff>
         <trackName>Bratsche</trackName>
         <Instrument id="viola">
-          <longName>Dritte Stimme</longName>
-          <shortName>3. St.</shortName>
           <trackName>Bratsche</trackName>
           <minPitchP>48</minPitchP>
           <maxPitchP>93</maxPitchP>
@@ -14757,9 +14512,9 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text><font size="20"></font>
+            <text><font size="20"/>
      Kanon für Bratsche
-    </text>
+</text>
             </Text>
           <Text>
             <linked>
@@ -14772,6 +14527,7 @@
             </Text>
           </VBox>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Clef>
               <concertClefType>G</concertClefType>
@@ -14812,6 +14568,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14827,6 +14584,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14842,6 +14600,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14857,6 +14616,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14885,6 +14645,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14913,6 +14674,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14942,6 +14704,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -14971,6 +14734,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15025,6 +14789,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15049,6 +14814,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15070,6 +14836,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15124,6 +14891,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15148,6 +14916,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15202,6 +14971,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15263,6 +15033,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15317,6 +15088,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15345,6 +15117,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15399,6 +15172,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15453,6 +15227,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15507,6 +15282,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15528,6 +15304,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15556,6 +15333,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15577,6 +15355,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15598,6 +15377,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15626,6 +15406,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15680,6 +15461,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15708,6 +15490,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15723,6 +15506,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15777,6 +15561,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15831,6 +15616,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15852,6 +15638,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15873,6 +15660,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15927,6 +15715,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15948,6 +15737,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -15969,6 +15759,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -16023,6 +15814,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -16046,6 +15838,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -16061,6 +15854,7 @@
             </voice>
           </Measure>
         <Measure>
+          <stretch>2.9</stretch>
           <voice>
             <Chord>
               <linked>
@@ -17888,2591 +17682,6 @@
           </Measure>
         </Staff>
       <name>Akkorde Nachweis</name>
-      </Score>
-    <Score>
-      <LayerTag id="0" tag="default"></LayerTag>
-      <currentLayer>0</currentLayer>
-      <Division>480</Division>
-      <Style>
-        <pageWidth>8.27</pageWidth>
-        <pageHeight>11.69</pageHeight>
-        <createMultiMeasureRests>1</createMultiMeasureRests>
-        <Spatium>1.74978</Spatium>
-        </Style>
-      <showInvisible>0</showInvisible>
-      <showUnprintable>1</showUnprintable>
-      <showFrames>1</showFrames>
-      <showMargins>0</showMargins>
-      <metaTag name="partName">4+3</metaTag>
-      <Part>
-        <Staff id="1">
-          <linkedTo>2</linkedTo>
-          <StaffType group="pitched">
-            <name>stdNormal</name>
-            </StaffType>
-          <defaultClef>C3</defaultClef>
-          </Staff>
-        <trackName>Bratsche</trackName>
-        <Instrument id="viola">
-          <longName>Bratsche</longName>
-          <shortName>Bra.</shortName>
-          <trackName>Bratsche</trackName>
-          <minPitchP>48</minPitchP>
-          <maxPitchP>93</maxPitchP>
-          <minPitchA>48</minPitchA>
-          <maxPitchA>79</maxPitchA>
-          <instrumentId>strings.viola</instrumentId>
-          <clef>C3</clef>
-          <Articulation>
-            <velocity>100</velocity>
-            <gateTime>100</gateTime>
-            </Articulation>
-          <Articulation name="staccatissimo">
-            <velocity>100</velocity>
-            <gateTime>33</gateTime>
-            </Articulation>
-          <Articulation name="staccato">
-            <velocity>100</velocity>
-            <gateTime>50</gateTime>
-            </Articulation>
-          <Articulation name="portato">
-            <velocity>100</velocity>
-            <gateTime>67</gateTime>
-            </Articulation>
-          <Articulation name="tenuto">
-            <velocity>100</velocity>
-            <gateTime>100</gateTime>
-            </Articulation>
-          <Articulation name="marcato">
-            <velocity>120</velocity>
-            <gateTime>67</gateTime>
-            </Articulation>
-          <Articulation name="sforzato">
-            <velocity>150</velocity>
-            <gateTime>100</gateTime>
-            </Articulation>
-          <Articulation name="sforzatoStaccato">
-            <velocity>150</velocity>
-            <gateTime>50</gateTime>
-            </Articulation>
-          <Articulation name="marcatoStaccato">
-            <velocity>120</velocity>
-            <gateTime>50</gateTime>
-            </Articulation>
-          <Articulation name="marcatoTenuto">
-            <velocity>120</velocity>
-            <gateTime>100</gateTime>
-            </Articulation>
-          <Channel name="arco">
-            <controller ctrl="0" value="0"/>
-            <controller ctrl="32" value="17"/>
-            <program value="41"/>
-            <synti>Fluid</synti>
-            <solo>1</solo>
-            </Channel>
-          <Channel name="pizzicato">
-            <program value="45"/>
-            <synti>Fluid</synti>
-            <solo>1</solo>
-            </Channel>
-          <Channel name="tremolo">
-            <controller ctrl="0" value="0"/>
-            <controller ctrl="32" value="17"/>
-            <program value="44"/>
-            <synti>Fluid</synti>
-            <solo>1</solo>
-            </Channel>
-          </Instrument>
-        </Part>
-      <Staff id="1">
-        <VBox>
-          <height>3.5</height>
-          <linked>
-            <location>
-              <staves>-1</staves>
-              </location>
-            </linked>
-          <Text>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <style>Title</style>
-            <text><font size="20"></font>
-     Kanon für Bratsche
-    </text>
-            </Text>
-          <Text>
-            <linked>
-              <location>
-                <staves>-1</staves>
-                </location>
-              </linked>
-            <style>Composer</style>
-            <text>Leon Focker</text>
-            </Text>
-          </VBox>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <TimeSig>
-              <linked>
-                </linked>
-              <sigN>1</sigN>
-              <sigD>4</sigD>
-              </TimeSig>
-            <Tempo>
-              <tempo>0.333333</tempo>
-              <linked>
-                <location>
-                  <staves>-1</staves>
-                  </location>
-                <indexDiff>3</indexDiff>
-                </linked>
-              <minDistance>0.108127</minDistance>
-              <offset x="-1.64587" y="-3.33381"/>
-              <text>sehr langsam</text>
-              </Tempo>
-            <StaffText>
-              <linked>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <style>Expression</style>
-              <minDistance>-0.233995</minDistance>
-              <offset x="-5.48623" y="-1.20955"/>
-              <text>il più possibile flautando</text>
-              </StaffText>
-            <Dynamic>
-              <subtype>ppp</subtype>
-              <velocity>16</velocity>
-              <linked>
-                <indexDiff>1</indexDiff>
-                </linked>
-              </Dynamic>
-            <Chord>
-              <linked>
-                <indexDiff>1</indexDiff>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  <indexDiff>1</indexDiff>
-                  </linked>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <StemDirection>down</StemDirection>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <StemDirection>down</StemDirection>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>5</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>52</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>52</pitch>
-                <tpc>18</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Clef>
-              <concertClefType>G</concertClefType>
-              <transposingClefType>G</transposingClefType>
-              <linked>
-                </linked>
-              </Clef>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <location>
-              <fractions>1/8</fractions>
-              </location>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <StaffText>
-              <minDistance>-999</minDistance>
-              <size>8</size>
-              <offset x="2.20831" y="3.44773"/>
-              <text>II</text>
-              </StaffText>
-            <Chord>
-              <durationType>quarter</durationType>
-              <Note>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
-                <pitch>78</pitch>
-                <tpc>20</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <StaffText>
-              <linked>
-                </linked>
-              <minDistance>-999</minDistance>
-              <size>8</size>
-              <offset x="2.33273" y="3.47883"/>
-              <text>II</text>
-              </StaffText>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>59</pitch>
-                <tpc>19</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>59</pitch>
-                <tpc>19</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>83</pitch>
-                <tpc>19</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <StaffText>
-              <linked>
-                </linked>
-              <minDistance>-999</minDistance>
-              <size>8</size>
-              <offset x="1.99059" y="3.41663"/>
-              <text>II</text>
-              </StaffText>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
-                <pitch>85</pitch>
-                <tpc>21</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <location>
-              <fractions>1/8</fractions>
-              </location>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>83</pitch>
-                <tpc>19</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>66</pitch>
-                <tpc>20</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>66</pitch>
-                <tpc>20</tpc>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Accidental>
-                  <subtype>accidentalSharp</subtype>
-                  </Accidental>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>90</pitch>
-                <tpc>20</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>60</pitch>
-                <tpc>14</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <location>
-              <fractions>1/8</fractions>
-              </location>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>88</pitch>
-                <tpc>18</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>55</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>65</pitch>
-                <tpc>13</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>quarter</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>93</pitch>
-                <tpc>17</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>57</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>quarter</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>55</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>55</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            <Clef>
-              <concertClefType>G</concertClefType>
-              <transposingClefType>G</transposingClefType>
-              <linked>
-                </linked>
-              </Clef>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <durationType>quarter</durationType>
-              <Note>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <pitch>72</pitch>
-                <tpc>14</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>64</pitch>
-                <tpc>18</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>77</pitch>
-                <tpc>13</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>71</pitch>
-                <tpc>19</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>72</pitch>
-                <tpc>14</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>quarter</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>60</pitch>
-                <tpc>14</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>60</pitch>
-                <tpc>14</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <location>
-              <fractions>1/8</fractions>
-              </location>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>79</pitch>
-                <tpc>15</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <StaffText>
-              <linked>
-                </linked>
-              <minDistance>-999</minDistance>
-              <size>8</size>
-              <offset x="2.27219" y="1.49387"/>
-              <text>II</text>
-              </StaffText>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>69</pitch>
-                <tpc>17</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>84</pitch>
-                <tpc>14</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/8</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/8</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                <head>diamond</head>
-                <play>0</play>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <location>
-              <fractions>1/8</fractions>
-              </location>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>86</pitch>
-                <tpc>16</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>72</pitch>
-                <tpc>14</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>76</pitch>
-                <tpc>18</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>86</pitch>
-                <tpc>16</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>eighth</durationType>
-              </Rest>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <StaffText>
-              <linked>
-                </linked>
-              <placement>below</placement>
-              <minDistance>-999</minDistance>
-              <size>8</size>
-              <offset x="-2.00335" y="1.5283"/>
-              <text>II</text>
-              </StaffText>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>down</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>62</pitch>
-                <tpc>16</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>81</pitch>
-                <tpc>17</tpc>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>quarter</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>79</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            </voice>
-          </Measure>
-        <Measure>
-          <stretch>4.9</stretch>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Beam>
-              <StemDirection>down</StemDirection>
-              </Beam>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <Tie>
-                    <linked>
-                      </linked>
-                    <up>up</up>
-                    </Tie>
-                  <next>
-                    <location>
-                      <fractions>1/12</fractions>
-                      <notes>1</notes>
-                      </location>
-                    </next>
-                  </Spanner>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                </Note>
-              </Chord>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Note>
-                <linked>
-                  </linked>
-                <pitch>67</pitch>
-                <tpc>15</tpc>
-                </Note>
-              <Note>
-                <linked>
-                  </linked>
-                <Spanner type="Tie">
-                  <prev>
-                    <location>
-                      <fractions>-1/12</fractions>
-                      <notes>-1</notes>
-                      </location>
-                    </prev>
-                  </Spanner>
-                <pitch>74</pitch>
-                <tpc>16</tpc>
-                <head>diamond</head>
-                <headType>half</headType>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          <voice/>
-          <voice/>
-          <voice>
-            <Tuplet>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <normalNotes>2</normalNotes>
-              <actualNotes>3</actualNotes>
-              <baseNote>eighth</baseNote>
-              <Number>
-                <visible>0</visible>
-                <style>Tuplet</style>
-                <text>3</text>
-                </Number>
-              </Tuplet>
-            <Rest>
-              <linked>
-                </linked>
-              <visible>0</visible>
-              <durationType>quarter</durationType>
-              </Rest>
-            <Chord>
-              <linked>
-                </linked>
-              <durationType>eighth</durationType>
-              <Stem>
-                <visible>0</visible>
-                </Stem>
-              <Hook>
-                <name>flag8thDown</name>
-                <visible>0</visible>
-                </Hook>
-              <Note>
-                <linked>
-                  </linked>
-                <Symbol>
-                  <name>noteheadParenthesisLeft</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <Symbol>
-                  <name>noteheadParenthesisRight</name>
-                  <linked>
-                    </linked>
-                  </Symbol>
-                <pitch>86</pitch>
-                <tpc>16</tpc>
-                <small>1</small>
-                </Note>
-              </Chord>
-            <endTuplet/>
-            </voice>
-          </Measure>
-        </Staff>
-      <name>4+3</name>
       </Score>
     </Score>
   </museScore>
