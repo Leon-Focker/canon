@@ -702,7 +702,7 @@
         <Text>
           <linkedMain/>
           <style>Title</style>
-          <text><font size="20"/>
+          <text><font size="20"></font>
      Kanon für Bratsche
 </text>
           </Text>
@@ -2103,7 +2103,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2236,7 +2235,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2338,7 +2336,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2404,7 +2401,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2418,7 +2414,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>down</up>
                   </Tie>
                 <next>
@@ -2450,7 +2445,6 @@
                 </Accidental>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2486,7 +2480,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -2539,7 +2532,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2620,7 +2612,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2641,7 +2632,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>up</up>
                   </Tie>
                 <next>
@@ -2682,7 +2672,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -2724,7 +2713,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2745,7 +2733,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>up</up>
                   </Tie>
                 <next>
@@ -2786,7 +2773,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -2828,7 +2814,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -2842,7 +2827,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2870,7 +2854,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -2910,7 +2893,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -3031,7 +3013,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -3045,7 +3026,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>down</up>
                   </Tie>
                 <next>
@@ -3074,7 +3054,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3110,7 +3089,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -3182,7 +3160,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -3203,7 +3180,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>up</up>
                   </Tie>
                 <next>
@@ -3244,7 +3220,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -3290,7 +3265,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3403,7 +3377,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>down</up>
                   </Tie>
                 <next>
@@ -3500,7 +3473,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -3514,7 +3486,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>down</up>
                   </Tie>
                 <next>
@@ -3543,7 +3514,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3579,7 +3549,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -3631,7 +3600,6 @@
             <text>II</text>
             </StaffText>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -3645,7 +3613,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   <up>down</up>
                   </Tie>
                 <next>
@@ -3674,7 +3641,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3721,7 +3687,6 @@
       <Measure>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
             <baseNote>eighth</baseNote>
@@ -3742,7 +3707,6 @@
             <Note>
               <Spanner type="Tie">
                 <Tie>
-                  <linkedMain/>
                   </Tie>
                 <next>
                   <location>
@@ -3782,7 +3746,6 @@
         <voice/>
         <voice>
           <Tuplet>
-            <linkedMain/>
             <visible>0</visible>
             <normalNotes>2</normalNotes>
             <actualNotes>3</actualNotes>
@@ -9904,7 +9867,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text><font size="20"/>
+            <text><font size="20"></font>
      Kanon für Bratsche
 </text>
             </Text>
@@ -11353,6 +11316,7 @@
               <transposingClefType>G</transposingClefType>
               <linked>
                 </linked>
+              <visible>0</visible>
               </Clef>
             </voice>
           <voice/>
@@ -12782,7 +12746,7 @@
               </linked>
             <style>Title</style>
             <align>left,top</align>
-            <text><font size="20"/>
+            <text><font size="20"></font>
      Kanon für Bratsche
 </text>
             </Text>
@@ -14512,7 +14476,7 @@
                 </location>
               </linked>
             <style>Title</style>
-            <text><font size="20"/>
+            <text><font size="20"></font>
      Kanon für Bratsche
 </text>
             </Text>
