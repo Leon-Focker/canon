@@ -5,4 +5,4 @@ The second part is the notation (Kanon_fuer_Bratsche.mscx) which contains a lot 
 
 Kanon_fuer_Bratsche.pdf the actual score and Kanon_fuer_Bratsche_Einzelstimmen.pdf shows how the chords are split into the three canon voices.
 
-You can listen to the premiere of the piece [here](https://icem.folkwang-uni.de/~focker/Kanon.wav).
+You can listen to the premiere of the piece [here](https://leonfocker.de/works/kanon/).
