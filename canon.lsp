@@ -93,9 +93,15 @@
 
 ;; ** utilities and make-functions for classes
 
+;; *** note-to-midi
+;;; define this to get quarter notes as .5 midi notes
+(defun canon-note-to-midi (note)
+  (/ (note-to-degree note 'quarter-tone) 2.0))
+
 ;; *** MAKE
 (defun get-interval-from-harmonic (root sounding)
-  (let* ((diff (- (note-to-midi sounding) (note-to-midi root))))
+  ;; use note-to-degree to allow quarter notes
+  (let* ((diff (- (canon-note-to-midi sounding) (canon-note-to-midi root))))
     (midi-to-note
      (+ (cond ((= diff 0) 0)
 	      ((= diff 12) 12)
@@ -105,7 +111,7 @@
 	      ((= diff 31) 3)
 	      (t (progn (warn "weird interval: ~a ~a, diff: ~a" root sounding diff)
 			0)))
-	(note-to-midi root)))))
+	(canon-note-to-midi root)))))
 
 (defun make-violin-harmonic (id root sounding saite &optional interval)
   (make-instance 'violin-harmonic
@@ -146,14 +152,14 @@
 	(loop for saite in '(4 3 2 1)
 	      and from in froms
 	      and to in tos
-	      append (loop for note from (note-to-midi from) to (note-to-midi to)
-			   collect (make-viola-harmonic (format nil "~a_~a_~a"
-								saite
-								(midi-to-note note)
-								(midi-to-note (+ interval note)))
-							(midi-to-note note)
-							(midi-to-note (+ interval note))
-							saite)))))
+	      append (loop for note from (note-to-midi from) to (note-to-midi to) by 0.5
+			   collect (make-violin-harmonic (format nil "~a_~a_~a"
+								 saite
+								 (midi-to-note note)
+								 (midi-to-note (+ interval note)))
+							 (midi-to-note note)
+							 (midi-to-note (+ interval note))
+							 saite)))))
 
 ;;; loop through all strings and get theirs harmonics by sounding-interval and 
 ;;; position at which they are played.
@@ -181,7 +187,7 @@
 (defun get-all-normal-notes ()
   (loop for string in '(g3 d4 a4 e5)
 	for saite in '(4 3 2 1)
-	append (loop for note from (note-to-midi string) repeat 25
+	append (loop for note from (note-to-midi string) by 0.5 repeat 25
 		     collect (make-violin-harmonic (format nil "~a_~a" saite (midi-to-note note))
 						   (midi-to-note note)
 						   (midi-to-note note)
@@ -241,7 +247,15 @@
 ;;; Einsatzabstand should be #'1- for voice 2 and 3, as it is now, the third
 ;;; voice starts earlier in relation to the second, as the second in relation to
 ;;; the first...
-(defun compose (first-pitch length &optional (einsatzabstand 1) (n 0))
+;;; - einsatzabstand:
+;;; - intervall1:  Interval of the second voice relative to voice 1
+;;; - intervall2:  Interval of the third voice relative to voice 1
+;;; - n:
+(defun compose (first-pitch length &optional
+				     (einsatzabstand 1)
+				     (intervall1 7)
+				     (intervall2 12)
+				     (n 0))
   (let* ((all-notes (append (get-all-artificial-harmonics)
 			    (get-all-natural-harmonics)
 			    (get-all-normal-notes)))
@@ -271,15 +285,15 @@
 	       (let* ((this (first ls-of-cf))
 		      (len (length ls-of-cf))
 		      (voice2 (midi-to-note
-			       (+ (note-to-midi
+			       (+ (canon-note-to-midi
 				   (this (nth (min (1- len) einsatzabstand)
 					      ls-of-cf)))
-				  7)))
+				  intervall1)))
 		      (voice3 (midi-to-note
-			       (+ (note-to-midi
+			       (+ (canon-note-to-midi
 				   (this (nth (min (1- len) (* einsatzabstand 2))
 					      ls-of-cf)))
-				  12))))
+				  intervall2))))
 		 ;; look for option that matches 
 		 (unless (options this)
 		   (setf (options this)
@@ -332,7 +346,7 @@
 
 ;; *** the canon
 
-(defparameter *canon* (compose 'a3 40 2))
+(defparameter *canon* (compose 'e4 10 2 3.5))
 
 (notate (loop for i in *canon* collect (note i))
 	(format nil "~acanon_chords.xml" *target-dir*))
