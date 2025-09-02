@@ -16,7 +16,7 @@
 
 (in-package :sc)
 
-(defparameter *target-dir* "/E/code/canon/")
+(defparameter *target-dir* "~/Desktop/")
 
 (in-scale :quarter-tone)
 
@@ -28,7 +28,7 @@
    (root-f :accessor root-f :initarg :root-f :initform nil)
    (times-used :accessor times-used :type integer :initform 0)))
 
-(defclass viola-harmonic (note)
+(defclass violin-harmonic (note)
   ((saite :type integer :accessor saite :initarg :saite :initform 4)
    (sounding :accessor sounding :initarg :sounding :initform nil)
    (sounding-f :accessor sounding-f :initarg :sounding-f :initform nil)
@@ -36,7 +36,7 @@
 	     :initform 0)))
 
 (defclass cantus-firmus (note)
-  ;; the viola-harmonic/note:
+  ;; the violin-harmonic/note:
   ((note :accessor note :initarg :note :initform nil) 
    ;; pitch only (to form melody of voice1 = cantus firmus):
    (this :accessor this :initarg :this :initform nil)
@@ -48,13 +48,13 @@
 (defmethod print-object :after ((nt note) stream)
   (format stream "~&~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~%"))
 
-(defmethod print-object ((vh viola-harmonic) stream)
-  (format stream "<VIOLA-HARMONIC ~a>" (id vh)))
+(defmethod print-object ((vh violin-harmonic) stream)
+  (format stream "<VIOLIN-HARMONIC ~a>" (id vh)))
 
 ;; ** finding matches
 
 ;; *** matchp
-(defmethod matchp ((vh1 viola-harmonic) (vh2 viola-harmonic)
+(defmethod matchp ((vh1 violin-harmonic) (vh2 violin-harmonic)
 		   &optional (scale 'chromatic-scale))
   (let* ((r1 (root-f vh1))
 	 (r2 (root-f vh2))
@@ -66,7 +66,7 @@
       (or (samenotep r1 r2)
 	  (samenotep s1 s2)))))
 
-(defmethod match-in (pitch (vh viola-harmonic)
+(defmethod match-in (pitch (vh violin-harmonic)
 		     &optional (scale 'chromatic-scale))
   (let* ((r (root-f vh))
 	 (s (sounding-f vh))
@@ -83,7 +83,7 @@
 
 ;; *** parse-to-event
 
-(defmethod parse-to-event ((vh viola-harmonic) &optional (start-time 1))
+(defmethod parse-to-event ((vh violin-harmonic) &optional (start-time 1))
   (make-event
    (make-chord `(,(root vh)
 		 ,(interval vh)
@@ -107,8 +107,8 @@
 			0)))
 	(note-to-midi root)))))
 
-(defun make-viola-harmonic (id root sounding saite &optional interval)
-  (make-instance 'viola-harmonic
+(defun make-violin-harmonic (id root sounding saite &optional interval)
+  (make-instance 'violin-harmonic
 		 :id (or id (format nil "~a-~a-~a" saite root sounding))
 		 :root root
 		 :sounding sounding
@@ -127,13 +127,20 @@
 (defun find-with-id (id ls)
   (find (string id) ls :test #'(lambda (x y) (equal x (id y)))))
 
-;; ** all viola harmonics and notes
+;; ** all violin harmonics and notes
 
 ;; *** get-all-artificial-harmonics
-;;; all possible artificial viola harmonics:
+;;; all possible artificial violin harmonics:
+;;; Firstly loop through the types of harmonic (third harmonic, fourth, fifth and sixth)
+;;; For each type and per string also specify lowest and highest note to
+;;; calculate the harmonics for.
+;;; (froms is a list of lists (one for each type of harmonic) with 4 notes (one per string)
+;;; which will be the starting pitch to collect artificial harmonics from.)
+;;; TODO why was the first list of froms and tos different than the others for viola?
+;;; just made them the same here...
 (defun get-all-artificial-harmonics ()
-  (loop for froms in '((f3 c4 g4 d5)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4)(cs3 gs3 ds4 as4))
-	for tos in '((b4 fs4 cs5 gs5)(c4 g4 d5 a5)(c4 g4 d5 a5)(c4 g4 d5 a5))
+  (loop for froms = '(gs3 ds4 as4 f5)
+	for tos = '(g4 d5 a5 e6)
 	for interval in '(19 24 28 31)
 	append
 	(loop for saite in '(4 3 2 1)
@@ -148,40 +155,42 @@
 							(midi-to-note (+ interval note))
 							saite)))))
 
-;; what about the different positions to play one harmonic?
+;;; loop through all strings and get theirs harmonics by sounding-interval and 
+;;; position at which they are played.
 (defun get-all-natural-harmonics ()
-  (loop for root in '(c3 g3 d4 a4)
+  (loop for root in '(g3 d4 a4 e5)
 	for saite in '(4 3 2 1)
 	append (loop for interval in '(12 19 24 28 31 34 36)
 		     for played-interval in '((12)(7 19)(5 24)(4 9 16 28)(3 31)
 					      (3 6 10 15 22 34)(2 8 17 36))
 		     append (loop for played in played-interval
-				  collect (make-viola-harmonic
+				  collect (make-violin-harmonic
 					   (format nil "~a_~a_~a"
 						   saite
 						   interval
 						   (midi-to-note (+ (note-to-midi root)
 								    interval)))
-						  root
-						  (midi-to-note (+ (note-to-midi root)
-								   interval))
-						  saite
-						  (midi-to-note (+ (note-to-midi root)
-								   played)))))))
+					   root
+					   (midi-to-note (+ (note-to-midi root)
+							    interval))
+					   saite
+					   (midi-to-note (+ (note-to-midi root)
+							    played)))))))
 
+;;; collect 2 octaves of pitches for each string. 
 (defun get-all-normal-notes ()
-  (loop for string in '(c3 g3 d4 a4)
+  (loop for string in '(g3 d4 a4 e5)
 	for saite in '(4 3 2 1)
 	append (loop for note from (note-to-midi string) repeat 25
-		     collect (make-viola-harmonic (format nil "~a_~a" saite(midi-to-note note))
-						  (midi-to-note note)
-						  (midi-to-note note)
-						  saite))))
+		     collect (make-violin-harmonic (format nil "~a_~a" saite (midi-to-note note))
+						   (midi-to-note note)
+						   (midi-to-note note)
+						   saite))))
 
-(defparameter *all-viola-harmonics* (get-all-artificial-harmonics))
-(defparameter *all-viola-notes* (append (get-all-artificial-harmonics)
-					(get-all-natural-harmonics)
-					(get-all-normal-notes)))
+(defparameter *all-violin-harmonics* (get-all-artificial-harmonics))
+(defparameter *all-violin-notes* (append (get-all-artificial-harmonics)
+					 (get-all-natural-harmonics)
+					 (get-all-normal-notes)))
 
 ;; ** more match-making
 
@@ -192,7 +201,7 @@
   (flet ((samenotep (a b)
 	   (equal (freq-to-note a scale)
 		  (freq-to-note b scale))))
-    (loop for vn in *all-viola-notes*
+    (loop for vn in *all-violin-notes*
 	  when (and (samenotep (note-to-freq root) (root-f vn))
 		    (samenotep (note-to-freq sounding) (sounding-f vn))
 		    (samenotep (note-to-freq interval)
@@ -203,7 +212,7 @@
 
 ;; *** notate
 ;;; write a list of objects into an xml file for musical notation
-(defun notate (lst-of-harmonics file &optional (instrument 'viola))
+(defun notate (lst-of-harmonics file &optional (instrument 'violin))
   (unless (listp lst-of-harmonics) (error "not a list: ~a" lst-of-harmonics))
   (unless (listp (car lst-of-harmonics))
     (setf lst-of-harmonics (list lst-of-harmonics)))
@@ -239,7 +248,7 @@
 	 (first-note (find-similar first-pitch first-pitch first-pitch))
 	 (cnt n))
     (unless first-note
-      (error "coulnd't find similar note in *all-viola-notes*: ~a" first-pitch))
+      (error "coulnd't find similar note in *all-violin-notes*: ~a" first-pitch))
     (labels ((compose-aux2 (note v2 v3 saite)
 	       ;; SORT THE OPTIONS FOR BEST RESULTS:
 	       ;; repeated melody notes go back
