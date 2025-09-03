@@ -18,6 +18,7 @@
 
 (defparameter *target-dir* "c:/Users/leonf/Desktop/")
 (defparameter *use-quarter-notes* nil)
+(defparameter *scordatur* '(g3 d4 a4 e5))
 
 (in-scale :quarter-tone)
 
@@ -55,9 +56,9 @@
 ;; ** finding matches
 
 ;; *** matchp
-(defmethod matchp ((vh1 violin-harmonic) (vh2 violin-harmonic)
-		   &optional (scale 'chromatic-scale))
-  (let* ((r1 (root-f vh1))
+(defmethod matchp ((vh1 violin-harmonic) (vh2 violin-harmonic))
+  (let* ((scale (if *use-quarter-notes* 'quarter-tone 'chromatic-scale))
+	 (r1 (root-f vh1))
 	 (r2 (root-f vh2))
 	 (s1 (sounding-f vh1))
 	 (s2 (sounding-f vh2)))
@@ -67,9 +68,9 @@
       (or (samenotep r1 r2)
 	  (samenotep s1 s2)))))
 
-(defmethod match-in (pitch (vh violin-harmonic)
-		     &optional (scale 'chromatic-scale))
-  (let* ((r (root-f vh))
+(defmethod match-in (pitch (vh violin-harmonic))
+  (let* ((scale (if *use-quarter-notes* 'quarter-tone 'chromatic-scale))
+	 (r (root-f vh))
 	 (s (sounding-f vh))
 	 (i (note-to-freq (interval vh)))
 	 (p (note-to-freq pitch)))
@@ -146,27 +147,29 @@
 ;;; TODO why was the first list of froms and tos different than the others for viola?
 ;;; just made them the same here...
 (defun get-all-artificial-harmonics ()
-  (loop for froms = '(gs3 ds4 as4 f5)
-	for tos = '(g4 d5 a5 e6)
-	for interval in '(19 24 28 31)
-	append
-	(loop for saite in '(4 3 2 1)
-	      and from in froms
-	      and to in tos
-	      append (loop for note from (note-to-midi from) to (note-to-midi to)
-			   by (if *use-quarter-notes* 0.5 1)
-			   collect (make-violin-harmonic (format nil "~a_~a_~a"
-								 saite
-								 (midi-to-note note)
-								 (midi-to-note (+ interval note)))
-							 (midi-to-note note)
-							 (midi-to-note (+ interval note))
-							 saite)))))
+  (let ((froms (loop for note in *scordatur* collect (+ 1 (note-to-midi note))))
+	(tos (loop for note in *scordatur* collect (+ 12 (note-to-midi note)))))
+    (loop for interval in '(19 24 28 31)
+	  append
+	  (loop for saite in '(4 3 2 1)
+		and from in froms
+		and to in tos
+		append
+		(loop for note from from to to
+		      by (if *use-quarter-notes* 0.5 1)
+		      collect
+		      (make-violin-harmonic (format nil "~a_~a_~a"
+						    saite
+						    (midi-to-note note)
+						    (midi-to-note (+ interval note)))
+					    (midi-to-note note)
+					    (midi-to-note (+ interval note))
+					    saite))))))
 
 ;;; loop through all strings and get theirs harmonics by sounding-interval and 
 ;;; position at which they are played.
 (defun get-all-natural-harmonics ()
-  (loop for root in '(g3 d4 a4 e5)
+  (loop for root in *scordatur*
 	for saite in '(4 3 2 1)
 	append (loop for interval in '(12 19 24 28 31 34 36)
 		     for played-interval in '((12)(7 19)(5 24)(4 9 16 28)(3 31)
@@ -187,7 +190,7 @@
 
 ;;; collect 2 octaves of pitches for each string. 
 (defun get-all-normal-notes ()
-  (loop for string in '(g3 d4 a4 e5)
+  (loop for string in *scordatur*
 	for saite in '(4 3 2 1)
 	append (loop for note from (note-to-midi string) by (if *use-quarter-notes* 0.5 1) repeat 25
 		     collect (make-violin-harmonic (format nil "~a_~a" saite (midi-to-note note))
@@ -195,7 +198,6 @@
 						   (midi-to-note note)
 						   saite))))
 
-(defparameter *all-violin-harmonics* (get-all-artificial-harmonics))
 (defparameter *all-violin-notes* (append (get-all-artificial-harmonics)
 					 (get-all-natural-harmonics)
 					 (get-all-normal-notes)))
@@ -204,17 +206,17 @@
 
 ;; *** find-similar
 ;;; find an object that matches all three input pitches in some way
-(defun find-similar (root sounding interval
-		     &optional (scale 'chromatic-scale))
-  (flet ((samenotep (a b)
-	   (equal (freq-to-note a scale)
-		  (freq-to-note b scale))))
-    (loop for vn in *all-violin-notes*
-	  when (and (samenotep (note-to-freq root) (root-f vn))
-		    (samenotep (note-to-freq sounding) (sounding-f vn))
-		    (samenotep (note-to-freq interval)
-			       (note-to-freq (interval vn))))
-	    collect vn)))
+(defun find-similar (root sounding interval)
+  (let ((scale (if *use-quarter-notes* 'quarter-tone 'chromatic-scale)))
+    (flet ((samenotep (a b)
+	     (equal (freq-to-note a scale)
+		    (freq-to-note b scale))))
+      (loop for vn in *all-violin-notes*
+	    when (and (samenotep (note-to-freq root) (root-f vn))
+		      (samenotep (note-to-freq sounding) (sounding-f vn))
+		      (samenotep (note-to-freq interval)
+				 (note-to-freq (interval vn))))
+	      collect vn))))
 
 ;; ** notation
 
@@ -245,13 +247,14 @@
     (write-xml sc :file file)))
 
 ;; ** compose
-;;; - einsatzabstand: how many notes lie between beginning of first and second,
-;;;   and second and third voice.
+;;; - einsatzabstand1: how many notes lie between beginning of first and second voice.
+;;; - einsatzabstand2: how many notes lie between beginning of first and third voice.
 ;;; - intervall1:  Interval of the second voice relative to voice 1
 ;;; - intervall2:  Interval of the third voice relative to voice 1
 ;;; - n: choose the nth option out of a list of options for next notes.
 (defun compose (first-pitch length &optional
-				     (einsatzabstand 1)
+				     (einsatzabstand1 1)
+				     (einsatzabstand2 2)
 				     (intervall1 7)
 				     (intervall2 12)
 				     (n 0))
@@ -285,12 +288,12 @@
 		      (len (length ls-of-cf))
 		      (voice2 (midi-to-note
 			       (+ (canon-note-to-midi
-				   (this (nth (min (1- len) (1- einsatzabstand))
+				   (this (nth (min (1- len) (1- einsatzabstand1))
 					      ls-of-cf)))
 				  intervall1)))
 		      (voice3 (midi-to-note
 			       (+ (canon-note-to-midi
-				   (this (nth (min (1- len) (1- (* einsatzabstand 2)))
+				   (this (nth (min (1- len) (1- einsatzabstand2))
 					      ls-of-cf)))
 				  intervall2))))
 		 ;; look for option that matches 
