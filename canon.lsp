@@ -6,7 +6,7 @@
 ;;; function. Definitely start with shorter canons though, as the brute force
 ;;; method I am using can really take a while.
 
-;;; the nomenclature in the following object definitions and functions is not
+;;; The nomenclature in the following object definitions and functions is not
 ;;; good. For example, I use root as the midi-value for the root note and root-f
 ;;; as the same note as a frequency value. A worse offender might be 'interval,
 ;;; as it does not refer to a musical interval but another note (where the
@@ -16,7 +16,8 @@
 
 (in-package :sc)
 
-(defparameter *target-dir* "~/Desktop/")
+(defparameter *target-dir* "c:/Users/leonf/Desktop/")
+(defparameter *use-quarter-notes* nil)
 
 (in-scale :quarter-tone)
 
@@ -152,7 +153,8 @@
 	(loop for saite in '(4 3 2 1)
 	      and from in froms
 	      and to in tos
-	      append (loop for note from (note-to-midi from) to (note-to-midi to) by 0.5
+	      append (loop for note from (note-to-midi from) to (note-to-midi to)
+			   by (if *use-quarter-notes* 0.5 1)
 			   collect (make-violin-harmonic (format nil "~a_~a_~a"
 								 saite
 								 (midi-to-note note)
@@ -187,7 +189,7 @@
 (defun get-all-normal-notes ()
   (loop for string in '(g3 d4 a4 e5)
 	for saite in '(4 3 2 1)
-	append (loop for note from (note-to-midi string) by 0.5 repeat 25
+	append (loop for note from (note-to-midi string) by (if *use-quarter-notes* 0.5 1) repeat 25
 		     collect (make-violin-harmonic (format nil "~a_~a" saite (midi-to-note note))
 						   (midi-to-note note)
 						   (midi-to-note note)
@@ -243,14 +245,11 @@
     (write-xml sc :file file)))
 
 ;; ** compose
-  
-;;; Einsatzabstand should be #'1- for voice 2 and 3, as it is now, the third
-;;; voice starts earlier in relation to the second, as the second in relation to
-;;; the first...
-;;; - einsatzabstand:
+;;; - einsatzabstand: how many notes lie between beginning of first and second,
+;;;   and second and third voice.
 ;;; - intervall1:  Interval of the second voice relative to voice 1
 ;;; - intervall2:  Interval of the third voice relative to voice 1
-;;; - n:
+;;; - n: choose the nth option out of a list of options for next notes.
 (defun compose (first-pitch length &optional
 				     (einsatzabstand 1)
 				     (intervall1 7)
@@ -286,12 +285,12 @@
 		      (len (length ls-of-cf))
 		      (voice2 (midi-to-note
 			       (+ (canon-note-to-midi
-				   (this (nth (min (1- len) einsatzabstand)
+				   (this (nth (min (1- len) (1- einsatzabstand))
 					      ls-of-cf)))
 				  intervall1)))
 		      (voice3 (midi-to-note
 			       (+ (canon-note-to-midi
-				   (this (nth (min (1- len) (* einsatzabstand 2))
+				   (this (nth (min (1- len) (1- (* einsatzabstand 2)))
 					      ls-of-cf)))
 				  intervall2))))
 		 ;; look for option that matches 
@@ -305,9 +304,9 @@
 			  (when without (setf (options this) without))))
 		 ;; sort options for best results:
 		 (unless rmv (setf (options this)
-		       (sort (options this)
-			     (compose-aux2 (this this) voice2 voice3
-					   (saite (note this))))))
+				   (sort (options this)
+					 (compose-aux2 (this this) voice2 voice3
+						       (saite (note this))))))
 		 ;; if it didn't lead anywhere before, remove option:
 		 (when rmv (setf (options this)
 				 (remove (note rmv) (options this))))
@@ -322,17 +321,19 @@
 			       (pitches `(,(root next)
 					  ,(sounding next)
 					  ,(interval next))))
-			  ;(incf cnt)
+					;(incf cnt)
 			  (remove voice2 pitches :count 1)
 			  (remove voice3 pitches :count 1)
 			  (incf (times-used next))
 			  (compose-aux (push (make-cf next (first pitches))
 					     ls-of-cf))))
 		       ;; if no option is found:
-		       (t (let* ((old (pop ls-of-cf)))
-			    (incf (times-used (note old)) -1)
-			    (when ls-of-cf
-			      (compose-aux ls-of-cf old))))))))
+		       (t
+			(let* ((old (pop ls-of-cf)))
+			  (incf (times-used (note old)) -1)
+			  (if ls-of-cf
+			      (compose-aux ls-of-cf old)
+			      (error "no canon found!"))))))))
       (reverse
        (compose-aux `(,(make-cf (first first-note)
 				first-pitch)))))))
