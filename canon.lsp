@@ -17,7 +17,7 @@
 (in-package :sc)
 
 (defparameter *target-dir* "c:/Users/leonf/Desktop/")
-(defparameter *use-quarter-notes* nil)
+(defparameter *use-quarter-notes* t)
 (defparameter *scordatur* '(g3 d4 a4 e5))
 
 (in-scale :quarter-tone)
@@ -147,8 +147,8 @@
 ;;; TODO why was the first list of froms and tos different than the others for viola?
 ;;; just made them the same here...
 (defun get-all-artificial-harmonics ()
-  (let ((froms (loop for note in *scordatur* collect (+ 1 (note-to-midi note))))
-	(tos (loop for note in *scordatur* collect (+ 12 (note-to-midi note)))))
+  (let ((froms (loop for note in *scordatur* collect (+ 1 (canon-note-to-midi note))))
+	(tos (loop for note in *scordatur* collect (+ 12 (canon-note-to-midi note)))))
     (loop for interval in '(19 24 28 31)
 	  append
 	  (loop for saite in '(4 3 2 1)
@@ -179,20 +179,20 @@
 					   (format nil "~a_~a_~a"
 						   saite
 						   interval
-						   (midi-to-note (+ (note-to-midi root)
+						   (midi-to-note (+ (canon-note-to-midi root)
 								    interval)))
 					   root
-					   (midi-to-note (+ (note-to-midi root)
+					   (midi-to-note (+ (canon-note-to-midi root)
 							    interval))
 					   saite
-					   (midi-to-note (+ (note-to-midi root)
+					   (midi-to-note (+ (canon-note-to-midi root)
 							    played)))))))
 
 ;;; collect 2 octaves of pitches for each string. 
 (defun get-all-normal-notes ()
   (loop for string in *scordatur*
 	for saite in '(4 3 2 1)
-	append (loop for note from (note-to-midi string) by (if *use-quarter-notes* 0.5 1) repeat 25
+	append (loop for note from (canon-note-to-midi string) by (if *use-quarter-notes* 0.5 1) repeat 25
 		     collect (make-violin-harmonic (format nil "~a_~a" saite (midi-to-note note))
 						   (midi-to-note note)
 						   (midi-to-note note)
@@ -240,6 +240,22 @@
               :set-map (loop for i from 1 to len collect `(,i (1)))
               :rthm-seq-palette '((1 ((((1 4) q)))))
 	      :rehearsal-letters letters
+              :rthm-seq-map (loop for i from 1 to len collect `(,i ((ins (1))))))))
+    (map-over-events sc 0 nil 'ins
+		     #'(lambda (e) (setf (pitch-or-chord e)
+				    (pitch-or-chord (pop events)))))
+    (write-xml sc :file file)))
+
+(defun notate-pitches (lst-of-pitches file &optional (instrument 'violin))
+  (unless (listp lst-of-pitches) (error "not a list: ~a" lst-of-pitches))
+  (let* ((events (loop for i in lst-of-pitches collect (make-event i 'q)))
+	 (len (length events))
+	 (sc (make-slippery-chicken
+              '+pitches-to-notation+
+              :ensemble `(((ins (,instrument :midi-channel 1))))
+              :set-palette '((1 ((c4))))
+              :set-map (loop for i from 1 to len collect `(,i (1)))
+              :rthm-seq-palette '((1 ((((1 4) q)))))
               :rthm-seq-map (loop for i from 1 to len collect `(,i ((ins (1))))))))
     (map-over-events sc 0 nil 'ins
 		     #'(lambda (e) (setf (pitch-or-chord e)
@@ -355,7 +371,7 @@
 (notate (loop for i in *canon* collect (note i))
 	(format nil "~acanon_chords.xml" *target-dir*))
 
-(decode-canon *canon*)
+(notate-pitches (decode-canon *canon*)
+		(format nil "~acanon_voice1.xml" *target-dir*))
 
 ;; EOF canon.lsp
-
