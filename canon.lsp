@@ -16,7 +16,7 @@
 
 (in-package :sc)
 
-(defparameter *target-dir* "c:/Users/leonf/Desktop/")
+(defparameter *target-dir* "~/Desktop/")
 (defparameter *use-quarter-notes* t)
 (defparameter *scordatur* '(g3 d4 a4 e5))
 
@@ -218,6 +218,7 @@
 				 (note-to-freq (interval vn))))
 	      collect vn))))
 
+
 ;; ** notation
 
 ;; *** notate
@@ -364,9 +365,61 @@
   (let* ((cantus-firmus (loop for i in ls-of-cf collect (this i))))
     cantus-firmus))
 
+;; *** canon-goodness
+;;; check how often all three voices are a different note to judge 'goodness'
+(defun canon-goodness (canon einsatz1 einsatz2 interval1 interval2)
+  (let ((cnt 0))
+    (loop for i from einsatz2 below (length canon)
+	  for note1 = (note-to-midi (this (nth i canon)))
+	  for note2 = (+ (note-to-midi (this (nth (- i einsatz1) canon))) interval1)
+	  for note3 = (+ (note-to-midi (this (nth (- i einsatz2) canon))) interval2)
+	  do (unless (or (= note1 note2) (= note2 note3) (= note3 note1))
+	       (incf cnt)))
+    ;; return percentage of 3 voices
+    (* (/ cnt (length canon)) 100.0)))
+
 ;; *** the canon
 
-(defparameter *canon* (compose 'e4 10 2 3.5))
+;; shitty:
+;;(defparameter *canon* (apply #'compose '(c4 65 2 4 7 11)))
+;;(defparameter *canon* (apply #'compose '(bf4 111 2 4 7 11)))
+;; ascending:
+;; (defparameter *canon* (apply #'compose '(G3 111 1 3 12 7)))
+;; (defparameter *canon* (apply #'compose '(F5 111 1 3 -12 -8)))
+
+;; Looping:
+;;(defparameter *canon* (apply #'compose '(a3 60 2 3 7 12)))
+;;(defparameter *canon* (apply #'compose '(e4 40 2 3 7 12)))
+
+;; good
+;;(defparameter *canon* (compose 'a4 60 3 6 12 5)) -> 26%
+(defparameter *canon* (compose 'a4 65 3 6 12 5))
+
+;; original canon:
+;; (defparameter *canon* (compose 'e4 40 3 5 7 12)) -> 20%
+
+;; (loop for ls in '((1 2 6 9) (1 2 7 0) (1 2 7 2) (1 2 7 3) (1 2 7 7)
+;; 		  (1 2 7 9) (1 2 7 10) (1 2 7 11) (1 2 8 0) (1 2 8 8) (1 2 8 11) (1 2 8 12)
+;; 		  (1 2 9 0) (1 2 9 9) (1 2 10 0) (1 2 10 10) (1 2 11 -1) (1 2 12 0) (1 2 12 5)
+;; 		  (1 2 12 12) (2 4 -2 1) (2 4 -2 3) (2 4 -1 2) (2 4 -1 3) (2 4 0 -4) (2 4 0 -3)
+;; 		  (2 4 1 5) (2 4 1 6) (2 4 2 0)
+;; 		  (2 4 2 2) (2 4 2 7) (2 4 2 9) (2 4 3 -4) (2 4 3 -2) (2 4 3 -1) (2 4 3 0)
+;; 		  (2 4 3 3) (2 4 3 6) (2 4 3 10) (2 4 4 -3) (2 4 4 -1) (2 4 4 0) (2 4 4 1)
+;; 		  (2 4 4 4) (2 4 4 8) (2 4 5 -2) (2 4 5 0) (2 4 5 1) (2 4 5 2) (2 4 5 5)
+;; 		  (2 4 5 10) (2 4 6 0) (2 4 6 6) (2 4 6 9) (2 4 7 0) (2 4 7 2) (2 4 7 3)
+;; 		  (2 4 7 4) (2 4 7 7) (2 4 7 9) (2 4 7 10) (2 4 7 11) (2 4 8 0) (2 4 8 8)
+;; 		  (2 4 8 11) (2 4 8 12) (2 4 9 0) (2 4 9 9) (2 4 10 -2) (2 4 10 0) (2 4 10 10)
+;; 		  (2 4 11 -1) (2 4 12 0) (2 4 12 5) (2 4 12 12) (3 6 -4 -1)
+;; 		  (3 6 -3 -6) (3 6 -3 -3) (3 6 -3 1) (3 6 -2 1) (3 6 -2 3) (3 6 -1 2) (3 6 -1 3)
+;; 		  (3 6 1 5) (3 6 1 6) (3 6 2 -7) (3 6 2 2) (3 6 2 7)
+;; 		  (3 6 2 9) (3 6 3 -7) (3 6 3 -4) (3 6 3 -2) (3 6 3 -1) (3 6 3 0) (3 6 3 3)
+;; 		  (3 6 3 6) (3 6 3 10) (3 6 4 -3) (3 6 4 -1) (3 6 4 0) (3 6 4 1) (3 6 4 4)
+;; 		  (3 6 4 8) (3 6 4 11) (3 6 5 -7) (3 6 5 -2) (3 6 5 0) (3 6 5 1) (3 6 5 2)
+;; 		  (3 6 5 5) (3 6 5 10) (3 6 6 0) (3 6 6 6) (3 6 6 9) (3 6 7 0) (3 6 7 2)
+;; 		  (3 6 7 3) (3 6 7 4) (3 6 7 7) (3 6 7 9) (3 6 7 10) (3 6 7 11))
+;;       for canon = (ignore-errors (apply #'compose (append '(a4 40) ls)))
+;;       when canon do (print ls)
+;; 	)
 
 (notate (loop for i in *canon* collect (note i))
 	(format nil "~acanon_chords.xml" *target-dir*))
@@ -375,3 +428,4 @@
 		(format nil "~acanon_voice1.xml" *target-dir*))
 
 ;; EOF canon.lsp
+
